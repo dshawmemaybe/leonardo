@@ -106,7 +106,7 @@
 /* Default styles for background colors */
 
 .sl-slide-horizontal .sl-slide-inner.slide-scuba {
-	background-image: url("/scubaa.jpg");
+	background-image: url("/scubab.jpg");
 	width: 800px;
 	height: 600px;
 	background-size: contain;
@@ -115,7 +115,7 @@
 }
 
 .sl-slide-vertical .sl-slide-inner.slide-scuba {
-	background-image: url("/scubab.jpg");
+	background-image: url("/scubaa.jpg");
 	width: 800px;
 	height: 600px;
 	background-size: contain;
@@ -134,6 +134,24 @@
 
 .sl-slide-vertical .sl-slide-inner.slide-boat {
 	background-image: url("/boatb.jpg");
+	width: 800px;
+	height: 600px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.sl-slide-horizontal .sl-slide-inner.slide-bridge {
+	background-image: url("/bridgea.jpg");
+	width: 800px;
+	height: 600px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.sl-slide-vertical .sl-slide-inner.slide-bridge {
+	background-image: url("/bridgeb.jpg");
 	width: 800px;
 	height: 600px;
 	background-size: contain;

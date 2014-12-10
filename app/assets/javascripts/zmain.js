@@ -267,5 +267,34 @@ $(document).ready(function () {
 				})();
 				Page4.init();
 
+				var Page5 = (function() {
+					var $navArrows = $( '#nav-arrows-bridge' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider-bridge' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+							}
+						} ),
+						init = function() {
+							initEvents();
+							
+						},
+						initEvents = function() {
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+								slitslider.next();
+								return false;
+							} );
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+							} );
+						};
+						return { init : init };
+				})();
+				Page5.init();
+
 				//$(".ripple").waterripple({onclick: true});
 });
