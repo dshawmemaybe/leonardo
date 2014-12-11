@@ -20,7 +20,7 @@ $(document).ready(function () {
 			.add($("#bridge"))
 			.add($("#screw"))
 			.add($("#dredge"))
-			.add($("#works_cited"));
+			.add($("#sources"));
 
 	parallax.background = $("body");
 
@@ -32,45 +32,45 @@ $(document).ready(function () {
 	parallax.index.onload=function(){
 		setRight("scuba", "Scuba");
 		setLeft("dredge","Dredge");
-		setBottom("works_cited","Works Cited");
+		setBottom("sources","Sources");
 	};
 
 	parallax.scuba.onload=function(){
 		setTop("index", "Index")
 		setRight("boat", "Boat");
 		setLeft("index","Index");
-		setBottom("works_cited","Works Cited");
+		setBottom("sources","Sources");
 	};
 	
 	parallax.boat.onload=function(){
 		setTop("index", "Index")
 		setRight("bridge", "Bridge");
 		setLeft("scuba","Scuba");
-		setBottom("works_cited","Works Cited");
+		setBottom("sources","Sources");
 	};
 
 	parallax.bridge.onload=function(){
 		setTop("index", "Index")
 		setRight("screw", "Screw");
 		setLeft("boat","Boat");
-		setBottom("works_cited","Works Cited");
+		setBottom("sources","Sources");
 	};
 
 	parallax.screw.onload=function(){
 		setTop("index", "Index")
 		setRight("dredge", "Dredge");
 		setLeft("bridge","Bridge");
-		setBottom("works_cited","Works Cited");
+		setBottom("sources","Sources");
 	};
 
 	parallax.dredge.onload=function(){
 		setTop("index", "Index")
 		setRight("index", "Index");
 		setLeft("screw","Screw");
-		setBottom("works_cited","Works Cited");
+		setBottom("sources","Sources");
 	};
 
-	parallax.works_cited.onload=function(){
+	parallax.sources.onload=function(){
 		setTop("index", "Index");
 	};
 
