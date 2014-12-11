@@ -296,5 +296,6 @@ $(document).ready(function () {
 				})();
 				Page5.init();
 
+				$('[data-toggle="tooltip"]').tooltip();
 				//$(".ripple").waterripple({onclick: true});
 });
